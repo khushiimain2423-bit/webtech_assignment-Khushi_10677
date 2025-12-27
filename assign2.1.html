@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Webpage</title>
+    <style>
+        /* Element Selector */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            margin: 0;
+            padding: 0;
+            display: flex; /* display type */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Class Selector */
+        .card {
+            background-color: #fff;
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            position: relative; /* relative positioning */
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        /* Hover effect with transform */
+        .card:hover {
+            transform: translateY(-15px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        /* ID Selector */
+        #profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #2980b9;
+            position: absolute; /* absolute positioning */
+            top: -60px;
+            left: calc(50% - 60px);
+            transition: transform 0.3s ease;
+        }
+
+        #profile-pic:hover {
+            transform: rotate(10deg) scale(1.1);
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-top: 70px;
+            font-size: 22px;
+        }
+
+        p {
+            color: #555;
+            font-size: 15px;
+            margin: 10px 0;
+        }
+
+        /* Button styling with pseudo-classes */
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #2980b9;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #3498db;
+            transform: scale(1.1);
+        }
+
+        .btn:active {
+            background-color: #1f618d;
+            transform: scale(0.95);
+        }
+
+        .btn:focus {
+            outline: 3px solid #f39c12;
+        }
+
+        /* Social links styled with pseudo-classes */
+        .social-links {
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #2980b9;
+            font-size: 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #e74c3c;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img id="profile-pic" src="profile.jpg" alt="Profile Picture">
+        <h2>Khushi Kumari</h2>
+        <p>B.Tech CSE Student | Tech Explorer | Creative Programmer</p>
+        <a href="mailto:khushiimain2423@gmail.com" class="btn">Contact Me</a>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Tag Demonstration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            background-color: #dfe6e9;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #8e44ad;
+            margin-top: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+        }
+
+        img {
+            border: 3px solid #3498db;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        a img {
+            border: 3px solid #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding the &lt;img&gt; Tag in HTML</h1>
+
+    <h2>Basic Image</h2>
+    <p><img src="nature.jpg" alt="Beautiful Nature" width="400"></p>
+
+    <h2>Image with Size Control</h2>
+    <p><img src="mountains.jpg" alt="Snowy Mountains" width="400" height="250"></p>
+
+    <h2>Image with Tooltip</h2>
+    <p><img src="sunset.jpg" alt="Sunset View" title="A beautiful sunset" width="300"></p>
+
+    <h2>Image as a Link</h2>
+    <p>
+        <a href="https://www.wikipedia.org" target="_blank">
+            <img src="logo.png" alt="Wikipedia Logo" width="150">
+        </a>
+    </p>
+
+    <h2>Broken Image Example</h2>
+    <p><img src="missing.jpg" alt="Image not found"></p>
+
+</body>
+</html>
